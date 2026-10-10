@@ -12,35 +12,35 @@
 <style>
 /* Layout concept: vitrine editorial em tons de nude e ouro. Hero tipografico com retrato em formato amendoa (o formato das unhas), faixa em movimento, galeria, montador de pedido que abre o WhatsApp, avaliacoes reais e contato. */
 :root{
-  --bg:#FFF9F9;
-  --bg-2:#FBE9EC;
+  --bg:#FFFFFF;
+  --bg-2:#F8F4F5;
   --card:#FFFFFF;
-  --ink:#4A2A33;
-  --muted:#84606A;
-  --gold:#A64B67;
-  --gold-soft:#C98770;
-  --red:#C2547A;
-  --line:rgba(74,42,51,.14);--ga:#A64B67;--gb:#E58BA6;
+  --ink:#2B2124;
+  --muted:#6F6468;
+  --gold:#C2547A;
+  --gold-soft:#D9A0B2;
+  --red:#D6406F;
+  --line:rgba(43,33,36,.12);--ga:#C2547A;--gb:#EE8FAD;
   --bubble:#DFF0D6;
   --bubble-ink:#1F2A1B;
-  --shadow:0 24px 60px -28px rgba(74,42,51,.35);
+  --shadow:0 24px 60px -28px rgba(43,33,36,.28);
   --f-display:'Bodoni Moda','Didot','Bodoni 72',Georgia,serif;
   --f-body:'Jost','Helvetica Neue',Arial,sans-serif;
   --gutter:clamp(16px,4vw,48px);
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg:#24151A;--bg-2:#301D23;--card:#3A242B;--ink:#FFF3F4;--muted:#D9B9C0;
-    --gold:#F0A8BD;--gold-soft:#D79B84;--red:#F08BA8;--line:rgba(255,243,244,.16);--ga:#F7C0CF;--gb:#F08BA8;
-    --bubble:#274230;--bubble-ink:#E7F4E4;--shadow:0 24px 60px -28px rgba(0,0,0,.8);
-    color-scheme:dark;
+    --bg:#FFFFFF;--bg-2:#F8F4F5;--card:#FFFFFF;--ink:#2B2124;--muted:#6F6468;
+    --gold:#C2547A;--gold-soft:#D9A0B2;--red:#D6406F;--line:rgba(43,33,36,.12);--ga:#C2547A;--gb:#EE8FAD;
+    --bubble:#DFF0D6;--bubble-ink:#1F2A1B;--shadow:0 24px 60px -28px rgba(43,33,36,.28);
+    color-scheme:light;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#24151A;--bg-2:#301D23;--card:#3A242B;--ink:#FFF3F4;--muted:#D9B9C0;
-  --gold:#F0A8BD;--gold-soft:#D79B84;--red:#F08BA8;--line:rgba(255,243,244,.16);--ga:#F7C0CF;--gb:#F08BA8;
-  --bubble:#274230;--bubble-ink:#E7F4E4;--shadow:0 24px 60px -28px rgba(0,0,0,.8);
-  color-scheme:dark;
+  --bg:#FFFFFF;--bg-2:#F8F4F5;--card:#FFFFFF;--ink:#2B2124;--muted:#6F6468;
+  --gold:#C2547A;--gold-soft:#D9A0B2;--red:#D6406F;--line:rgba(43,33,36,.12);--ga:#C2547A;--gb:#EE8FAD;
+  --bubble:#DFF0D6;--bubble-ink:#1F2A1B;--shadow:0 24px 60px -28px rgba(43,33,36,.28);
+  color-scheme:light;
 }
 
 *{box-sizing:border-box}
@@ -89,8 +89,8 @@ nav a:hover{color:var(--ink)}
 .btn.ghost{background:transparent;color:var(--ink)}
 .btn.ghost:hover{background:var(--ink);color:var(--bg)}
 .btn.gold{background:var(--gold);border-color:var(--gold);color:#fff}
-:root[data-theme="dark"] .btn.gold{color:#201313}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.gold{color:#201313}}
+:root[data-theme="dark"] .btn.gold{color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.gold{color:#fff}}
 .btn svg{width:18px;height:18px;fill:currentColor}
 @media (max-width:760px){nav{display:none}}
 
